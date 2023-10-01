@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script type="module" src="todo.js"></script>
+</head>
+<body>
+
+    <!-- Logout Button -->
+    <button id="logoutBtn">Logout</button>
+
+    <!-- Add Todo Form -->
+    <h1>Add Todo</h1>
+    <form id="addTodoForm">
+        <input type="text" id="todoTitle" placeholder="Todo Title" required><br>
+        <button type="submit">Add Todo</button>
+    </form>
+
+    <h1>Todo List Page</h1>
+    <ul id="todosList"></ul>
+
+    <!-- Edit Todo Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Todo</h2>
+            <input type="text" id="editTitle" placeholder="New Title" required><br>
+            <button id="saveEditButton">Save</button>
+        </div>
+    </div>
+</body>
+</html>
